@@ -41,6 +41,9 @@ class TabList extends Component {
         }
     };
     componentWillMount () {
+      // alert(this.props.match.params.id) 获取路由参数
+      console.log(this.props.location)
+      
         this.setState({
             clickNum:0,
             listParams:JSON.parse(localStorage.getItem('listParams')),

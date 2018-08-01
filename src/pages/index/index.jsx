@@ -16,6 +16,7 @@ class Home extends Component {
  
    
     componentDidMount () {
+      
         
         
         this.getMenuList();
@@ -108,7 +109,15 @@ class Menu extends Component {
         },()=> {
               localStorage.setItem('listParams',JSON.stringify(this.state.listParams));
               localStorage.setItem('listClassify',JSON.stringify(this.state.listClassify));
-              this.state.router.push('/resourlist');
+              this.state.router.push({
+                  pathname:'/resourlist/1',
+                  query:{
+                      name:'test'
+                  },
+                  state:{
+                      title:'222'
+                  }       
+            });
         } )
      
      

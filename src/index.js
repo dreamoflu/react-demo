@@ -13,7 +13,7 @@ ReactDOM.render(
   <BrowserRouter>
    <Switch>
    <Route path='/' exact component={Index}></Route>
-     <Route path='/resourlist' component={Resourlist}></Route>
+     <Route path='/resourlist/:id' component={Resourlist}></Route>
      <Route path='/newpage' component={Newpage}></Route>
    </Switch>
      
