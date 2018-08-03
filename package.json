@@ -99,7 +99,7 @@
   },
   "proxy": {
     "/medapp": {
-      "target": "http://101.200.234.55:8080/medapp",
+      "target": "",
       "changeOrigin": true,
       "pathRewrite": {
         "^/medapp": ""
